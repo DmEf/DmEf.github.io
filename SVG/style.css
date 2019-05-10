@@ -1,0 +1,25 @@
+svg {
+  border: 3px solid red
+}
+@keyframes MyAnimation1
+{
+    from { fill: #f4f7a1; }
+    to { fill: gray; }
+}
+
+.bender:hover > .rot{
+    animation: MyAnimation1 0.3s infinite;
+}
+text {
+  
+  font-size: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Russo One', sans-serif;
+}
+.massage {
+  visibility: hidden;
+}
+.bender:hover ~ .massage {
+  visibility: visible;
+}
